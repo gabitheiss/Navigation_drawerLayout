@@ -21,12 +21,22 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonNavigate"
+        android:id="@+id/buttonNavigateActivity"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="Navigate To"
+        android:text="Navigate to activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_home" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNavigateFragment"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Navigate to fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNavigateActivity" />
 </androidx.constraintlayout.widget.ConstraintLayout>

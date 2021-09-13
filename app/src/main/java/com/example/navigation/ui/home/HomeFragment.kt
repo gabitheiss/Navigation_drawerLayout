@@ -36,10 +36,12 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
-        _binding?.buttonNavigate?.setOnClickListener{
+        _binding?.buttonNavigateActivity?.setOnClickListener{
             it.findNavController().navigate(R.id.testeActivity)
         }
-
+        _binding?.buttonNavigateFragment?.setOnClickListener{
+            it.findNavController().navigate(R.id.nav_gallery)
+        }
         return root
     }
 
