@@ -22,4 +22,11 @@
         android:name="com.example.navigation.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <activity
+        android:id="@+id/testeActivity"
+        android:name="com.example.navigation.TesteActivity"
+        android:label="activity_teste"
+        tools:layout="@layout/activity_teste" />
+
 </navigation>

@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import com.example.navigation.R
 import com.example.navigation.databinding.FragmentHomeBinding
 
@@ -35,6 +36,10 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
+        _binding?.buttonNavigate?.setOnClickListener{
+            it.findNavController().navigate(R.id.testeActivity)
+        }
+
         return root
     }
 
